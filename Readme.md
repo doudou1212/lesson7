@@ -7,7 +7,8 @@ IDE: IntelliJ JAVA
 1. 需要在mysql中创建一个名为“book”的数据库
 2. 创建一个用户名:root，密码:123456的账户（或者在Dao包中的DBInfo类中将用户名和密码换成自己数据库中存在的用户名和密码）
 3. 在book库中创建“booksinfo”和“bookmarks”两张数据表
-####booksinfo建表语句####
+
+###booksinfo建表语句###
 *booksinfo:用于存储书籍信息的数据表*  
 create table booksinfo(  
 \`id\` INT(11) not null auto\_increment comment 'book id',  
@@ -18,7 +19,7 @@ primary key (\`id\`),
 key idx\_booksinfo (id,is\_deleted)  
 );
 
-####bookmarks建表语句####
+###bookmarks建表语句###
 *bookmarks:用于存储标签信息*  
 create table boomarks(  
 \`id\` INT(11) not null auto\_increment comment 'mark id',  
