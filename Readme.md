@@ -36,7 +36,7 @@ key idx\_booksinfo (id,is\_deleted)
 运行工程时，需要将lib目录下的jar包添加到项目的libary中；   
 同时将lib目录下的jar包复制到Tomcat的lib目录中。
 ##4.运行##
-运行工程后，会有两个页面，其中：
+运行工程后，会有两个页面，其中：   
 inserBooks.jsp：点击页面上的按钮，将项目中resources目录里的JSON文件解析，并添加到数据库中，因此需要**先运行**   
 index.jsp:书签管理及搜索功能
 
