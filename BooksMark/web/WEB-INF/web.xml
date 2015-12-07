@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>getBooks</servlet-name>
+        <servlet-class>action.getBooks</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>uploadBooks</servlet-name>
+        <servlet-class>action.uploadBooks</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteBook</servlet-name>
+        <servlet-class>action.deleteBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addBookMark</servlet-name>
+        <servlet-class>action.addBookMark</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>searchMarks</servlet-name>
+        <servlet-class>action.searchMarks</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getBooks</servlet-name>
+        <url-pattern>/getResources</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>uploadBooks</servlet-name>
+        <url-pattern>/uploadBooks</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteBook</servlet-name>
+        <url-pattern>/deleteBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addBookMark</servlet-name>
+        <url-pattern>/addBookMark</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchMarks</servlet-name>
+        <url-pattern>/searchMarks</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
