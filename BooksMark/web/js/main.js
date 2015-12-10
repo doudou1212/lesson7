@@ -18,7 +18,7 @@ $(document).ready(function(){
                 var content = "<div><span class='isHide'>"+element.id+"</span><p class=" + "name" + ">" + element.title + "</p>" + "<p class=" + "ctime" + ">" + "Created @ " + unixToDate(element.created) + "</p><button class='deleteThisBook' onclick='deleteBookMsg(event)'>删除</button></div>";
                 $("#content").append(content);
             });
-            var content = "<p class='result'>搜索到" + bookNumbers + "个结果</p>"
+            var content = "<p class='result'>搜索到<span>" + bookNumbers + "</span>个结果</p>"
             $(".search").append(content);
             splitPages(pages);
         }
@@ -78,7 +78,7 @@ function ajaxToTurnPage(currentPage,keyword){
                 var content = "<div><span class='isHide'>"+element.id+"</span><p class=" + "name" + ">" + element.title + "</p>" + "<p class=" + "ctime" + ">" + "Created @ " + unixToDate(element.created) + "</p><button class='deleteThisBook' onclick='deleteBookMsg(event)'>删除</button></div>";
                 $("#content").append(content);
             });
-            var content = "<p class='result'>搜索到" + bookNumbers + "个结果</p>"
+            var content = "<p class='result'>搜索到<span>" + bookNumbers + "</span>个结果</p>"
             $("#search-content").val(keyword);
             $(".search").append(content);
             var children = $("#content div").children(".name").each(function(){
@@ -186,7 +186,7 @@ function ajaxToSearchBook(currentPage,keyword){
                 var content = "<div><span class='isHide'>"+element.id+"</span><p class=" + "name" + ">" + element.title + "</p>" + "<p class=" + "ctime" + ">" + "Created @ " + unixToDate(element.created) + "</p><button class='deleteThisBook' onclick='deleteBookMsg(event)'>删除</button></div>";
                 $("#content").append(content);
             });
-            var content = "<p class='result'>搜索到" + bookNumbers + "个结果</p>"
+            var content = "<p class='result'>搜索到<span>" + bookNumbers + "</span>个结果</p>"
             $("#search-content").val(keyword);
             $(".search").append(content);
             splitPages(pages);

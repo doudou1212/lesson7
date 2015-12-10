@@ -27,8 +27,8 @@
     <div id="pages" class="pages">
     </div>
     <div class="buttons">
-        <button onclick="addMarksDialog()">添加</button>
-        <button onclick="marksDialog()">书签</button>
+        <button class="addMarks" onclick="addMarksDialog()">添加</button>
+        <button class="showMarks" onclick="marksDialog()">书签</button>
     </div>
 </div>
 <div class="addDialog">
